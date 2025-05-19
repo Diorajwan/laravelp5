@@ -1,303 +1,89 @@
-<!--
-
-=========================================================
-* Argon Dashboard - v1.1.2
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-dashboard
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>
-    Argon Dashboard - Free Dashboard for Bootstrap 4 by Creative Tim
-  </title>
+  <title>Argon Dashboard - Free Dashboard for Bootstrap 4 by Creative Tim</title>
   <!-- Favicon -->
-  <link href="{{ asset ('admin/img/brand/favico.png')}}" rel="icon" type="image/png">
+  <link href="{{ asset('admin/img/brand/favico.png') }}" rel="icon" type="image/png">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
   <!-- Icons -->
-  <link href="{{ asset ('admin/js/plugins/nucleo/css/nucleo.css')}}" rel="stylesheet" />
-  <link href="{{ asset ('admin/js/plugins/@fortawesome/fontawesome-free/css/all.min.css')}}" rel="stylesheet" />
+  <link href="{{ asset('admin/js/plugins/nucleo/css/nucleo.css') }}" rel="stylesheet" />
+  <link href="{{ asset('admin/js/plugins/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet" />
   <!-- CSS Files -->
-  <link href="{{ asset('admin/css/argon-dashboard.css?v=1.1.2')}}" rel="stylesheet" />
+  <link href="{{ asset('admin/css/argon-dashboard.css?v=1.1.2') }}" rel="stylesheet" />
 </head>
 
 <body class="">
-  <nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white" id="sidenav-main">
-    <div class="container-fluid">
-      <!-- Toggler -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidenav-collapse-main" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Brand -->
-      <a class="navbar-brand pt-0" href="./index.html">
-        <img src="{{ asset ('admin/img/brand/blue.png')}}" class="navbar-brand-img" alt="...">
-      </a>
-      <!-- User -->
-      <ul class="nav align-items-center d-md-none">
-        <li class="nav-item dropdown">
-          <a class="nav-link nav-link-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="ni ni-bell-55"></i>
-          </a>
-          <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right" aria-labelledby="navbar-default_dropdown_1">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <div class="media align-items-center">
-              <span class="avatar avatar-sm rounded-circle">
-                <img alt="Image placeholder" src="{{ asset ('admin/img/theme/team-1-800x800.jpg')}}"
-">
-              </span>
-            </div>
-          </a>
-          <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
-            <div class=" dropdown-header noti-title">
-              <h6 class="text-overflow m-0">Welcome!</h6>
-            </div>
-            <a href="./examples/profile.html" class="dropdown-item">
-              <i class="ni ni-single-02"></i>
-              <span>My profile</span>
-            </a>
-            <a href="./examples/profile.html" class="dropdown-item">
-              <i class="ni ni-settings-gear-65"></i>
-              <span>Settings</span>
-            </a>
-            <a href="./examples/profile.html" class="dropdown-item">
-              <i class="ni ni-calendar-grid-58"></i>
-              <span>Activity</span>
-            </a>
-            <a href="./examples/profile.html" class="dropdown-item">
-              <i class="ni ni-support-16"></i>
-              <span>Support</span>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a href="#!" class="dropdown-item">
-              <i class="ni ni-user-run"></i>
-              <span>Logout</span>
-            </a>
-          </div>
-        </li>
-      </ul>
-      <!-- Collapse -->
-      <div class="collapse navbar-collapse" id="sidenav-collapse-main">
-        <!-- Collapse header -->
-        <div class="navbar-collapse-header d-md-none">
-          <div class="row">
-            <div class="col-6 collapse-brand">
-              <a href="./index.html">
-                <img src="./img/brand/blue.png">
-              </a>
-            </div>
-            <div class="col-6 collapse-close">
-              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#sidenav-collapse-main" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle sidenav">
-                <span></span>
-                <span></span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- Form -->
-        <form class="mt-4 mb-3 d-md-none">
-          <div class="input-group input-group-rounded input-group-merge">
-            <input type="search" class="form-control form-control-rounded form-control-prepended" placeholder="Search" aria-label="Search">
-            <div class="input-group-prepend">
-              <div class="input-group-text">
-                <span class="fa fa-search"></span>
-              </div>
-            </div>
-          </div>
-        </form>
-        <!-- Navigation -->
-        <ul class="navbar-nav">
-          <li class="nav-item  active ">
-            <a class="nav-link  active " href="{{ route('home')}}">
-              <i class="ni ni-tv-2 text-primary"></i> Dashboard
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="{{ route('artikel.index')}}">
-              <i class="ni ni-planet text-blue"></i> Artikel
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="./examples/maps.html">
-              <i class="ni ni-pin-3 text-orange"></i> Fasilitas
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="./examples/profile.html">
-              <i class="ni ni-single-02 text-yellow"></i> Dosen
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="./examples/tables.html">
-              <i class="ni ni-bullet-list-67 text-red"></i> Ukm
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./examples/login.html">
-              <i class="ni ni-key-25 text-info"></i> Falkutas
-            </a>
-          </li>
-        </ul>
-        <!-- Divider -->
-        <!-- Heading -->
-        <!-- Navigation -->
-      </div>
-    </div>
-  </nav>
+      <!-- Sidebar -->
+       @include('layouts.componen.sidebar')
+
+
   <div class="main-content">
-    <!-- Navbar -->
-    <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
-      <div class="container-fluid">
-        <!-- Brand -->
-        <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="./index.html">Dashboard</a>
-        <!-- Form -->
-        <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
-          <div class="form-group mb-0">
-            <div class="input-group input-group-alternative">
-              <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fas fa-search"></i></span>
-              </div>
-              <input class="form-control" placeholder="Search" type="text">
-            </div>
-          </div>
-        </form>
-        <!-- User -->
-        <ul class="navbar-nav align-items-center d-none d-md-flex">
-          <li class="nav-item dropdown">
-            <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <div class="media align-items-center">
-                <span class="avatar avatar-sm rounded-circle">
-                  <img alt="Image placeholder" src="{{ asset ('admin/img/theme/team-4-800x800.jpg')}}">
-                </span>
-                <div class="media-body ml-2 d-none d-lg-block">
-                  <span class="mb-0 text-sm  font-weight-bold">Dio rajwan</span>
-                </div>
-              </div>
-            </a>
-            <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
-              <div class=" dropdown-header noti-title">
-                <h6 class="text-overflow m-0">Welcome!</h6>
-              </div>
-              <a href="{{asset('admin/examples/profile.html')}}" class="dropdown-item">
-                <i class="ni ni-single-02"></i>
-                <span>My profile</span>
-              </a>
-              <a href="{{ asset('admin/examples/profile.html')}}" class="dropdown-item">
-                <i class="ni ni-settings-gear-65"></i>
-                <span>Settings</span>
-              </a>
-              <a href="{{ asset ('admin/examples/profile.html')}}" class="dropdown-item">
-                <i class="ni ni-calendar-grid-58"></i>
-                <span>Activity</span>
-              </a>
-              <a href="{{ asset('admin/examples/profile.html')}}" class="dropdown-item">
-                <i class="ni ni-support-16"></i>
-                <span>Support</span>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a href="#!" class="dropdown-item">
-                <i class="ni ni-user-run"></i>
-                <span>Logout</span>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- End Navbar -->
-    <!-- Header -->
+   @include('layouts.componen.navbar')
     <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
       <div class="container-fluid">
         <div class="header-body">
-          <!-- Card stats -->
           <div class="row">
-            <div class="col-xl-3 col-lg-6">
-            </div>
+            <div class="col-xl-3 col-lg-6"></div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="container-fluid mt--7">
       <div class="row">
         <div class="col-xl-8 mb-5 mb-xl-0">
-            <div class="bg-white shadow rounded p-6 w-full">
-                <div class="mb-4 flex justify-start">
-                    <a href="{{route('artikel.create')}}" class="bg-blue-500 hover:bg-blue-700 text-blue font-bold py-2 px-4 rounded">
-                        tambah
-                    </a>
-                </div>
-                @if (session('success'))
-                <div id="alert-success" onclick="hideAlert()"
-                class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4 cursor-pointer transition-opacity duration-500">
-                {{session('success')}}
-             </div>
-             @endif
-             <div class="overflow-x-auto">
-                <table class="min-w-full text-left">
-                    <thead class="bg-gray-100 text-gray-700 border-b">
-                    <tr>
-                        <th scope="col">No</th>
-                        <th scope="col">Judul</th>
-                        <th scope="col">Isi</th>
-                        <th scope="col">Foto</th>
-                        <th scope="col">Aksi</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                        @php $no =1; @endphp
-                        @foreach ($artikel as $data)
-                        <tr>
-                            <td scope="row">{{$no++}}</td>
-                            <td scope="row">{{$data->judul}}</td>
-                            <td scope="row">{{$data->isi}}</td>
-                            <td scope="row"><img src="{{asset('storage/artikel/' .$data->foto)}}" alt="" style="widht:50px; height: 50px;"></td>
-                            <td class="px-4 py-2">
-                                                    <a href="{{ route('artikel.show', $data->id) }}"
-                                                        class="bg-yellow-400 hover:bg-yellow-500 text-white rounded p-1 mx-1 inline-block">
-                                                        <i class="fas fa-eye"></i>
-                                                    </a>
-                                                    <a href="{{ route('artikel.edit', $data->id) }}"
-                                                        class="bg-orange-400 hover:bg-orange-500 text-white rounded p-1 mx-1 inline-block">
-                                                        <i class="fas fa-edit"></i>
-                                                    </a>
-                                                    <form action="{{ route('artikel.destroy', $data->id) }}" method="POST"
-                                                        class="inline-block"
-                                                        onsubmit="return confirm('Apakah Anda yakin ingin menghapus data ini?');">
-                                                        @csrf
-                                                        @method('DELETE')
-                                                        <button type="submit"
-                                                            class="bg-red-500 hover:bg-red-600 text-white rounded p-1 mx-1">
-                                                            <i class="fas fa-trash"></i>
-                                                        </button>
-                                                    </form>
-                                                </td>
-                        </tr>
-                        @endforeach
-                    </tbody>
-                </table>
-             </div>
+          <div class="bg-white shadow rounded p-4">
+            <div class="mb-4">
+              <a href="{{ route('artikel.create') }}" class="btn btn-primary">Tambah</a>
             </div>
+            @if (session('success'))
+              <div id="alert-success" onclick="hideAlert()" class="alert alert-success cursor-pointer">
+                {{ session('success') }}
+              </div>
+            @endif
+            <div class="table-responsive">
+              <table class="table align-items-center table-flush">
+                <thead class="thead-light">
+                  <tr>
+                    <th>No</th>
+                    <th>Judul</th>
+                    <th>Isi</th>
+                    <th>Foto</th>
+                    <th>Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  @php $no = 1; @endphp
+                  @foreach ($artikel as $data)
+                    <tr>
+                      <td>{{ $no++ }}</td>
+                      <td>{{ $data->judul }}</td>
+                      <td>{{ $data->isi }}</td>
+                      <td>
+                        <img src="{{ asset('storage/artikel/' . $data->foto) }}" alt="Artikel Foto" style="width: 50px; height: 50px;">
+                      </td>
+                      <td>
+                        <a href="{{ route('artikel.show', $data->id) }}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
+                        <a href="{{ route('artikel.edit', $data->id) }}" class="btn btn-info btn-sm"><i class="fas fa-edit"></i></a>
+                        <form action="{{ route('artikel.destroy', $data->id) }}" method="POST" class="d-inline" onsubmit="return confirm('Apakah Anda yakin ingin menghapus data ini?');">
+                          @csrf
+                          @method('DELETE')
+                          <button type="submit" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                        </form>
+                      </td>
+                    </tr>
+                  @endforeach
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- Footer -->
+
       <footer class="footer">
         <div class="row align-items-center justify-content-xl-between">
           <div class="col-xl-6">
@@ -325,21 +111,21 @@
       </footer>
     </div>
   </div>
-  <!--   Core   -->
-  <script src="{{ asset ('admin/js/plugins/jquery/dist/jquery.min.js')}}"></script>
-  <script src="{{ asset ('admin/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
-  <!--   Optional JS   -->
-  <script src="{{ asset ('admin/js/plugins/chart.js/dist/Chart.min.js')}}"></script>
-  <script src="{{ asset ('admin/js/plugins/chart.js/dist/Chart.extension.js')}}"></script>
-  <!--   Argon JS   -->
-  <script src="{{ asset ('admin/js/argon-dashboard.min.js')}}"></script>
+
+  <!-- Core -->
+  <script src="{{ asset('admin/js/plugins/jquery/dist/jquery.min.js') }}"></script>
+  <script src="{{ asset('admin/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+  <!-- Optional JS -->
+  <script src="{{ asset('admin/js/plugins/chart.js/dist/Chart.min.js') }}"></script>
+  <script src="{{ asset('admin/js/plugins/chart.js/dist/Chart.extension.js') }}"></script>
+  <!-- Argon JS -->
+  <script src="{{ asset('admin/js/argon-dashboard.min.js') }}"></script>
   <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
   <script>
-    window.TrackJS &&
-      TrackJS.install({
-        token: "ee6fab19c5a04ac1a32a645abde4613a",
-        application: "argon-dashboard-free"
-      });
+    window.TrackJS && TrackJS.install({
+      token: "ee6fab19c5a04ac1a32a645abde4613a",
+      application: "argon-dashboard-free"
+    });
   </script>
 </body>
 

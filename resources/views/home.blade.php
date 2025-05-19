@@ -141,18 +141,23 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="./examples/profile.html">
+            <a class="nav-link " href="{{ route('dosen.index')}}">
               <i class="ni ni-single-02 text-yellow"></i> Dosen
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="./examples/tables.html">
+            <a class="nav-link " href="{{ route('ukm.index')}}">
               <i class="ni ni-bullet-list-67 text-red"></i> Ukm
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./examples/login.html">
+            <a class="nav-link" href="{{ route('fakultas.index')}}">
               <i class="ni ni-key-25 text-info"></i> Falkutas
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="{{ route('prestasi.index')}}">
+              <i class="ni ni-key-25 text-info"></i> Prestasi
             </a>
           </li>
         </ul>

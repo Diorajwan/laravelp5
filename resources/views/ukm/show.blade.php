@@ -211,36 +211,38 @@
       </div>
     </div>
     <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Tambah Data</div>
-                <div class="card-body">
-                    <form action="{{route('dosen.store')}}" method="post" enctype="multipart/form-data">
-                        @csrf
-                        <div class="form-group">
-                            <label>Nama Guru</label>
-                            <input type="text" class="form-control" name="nama_guru" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Telepon</label>
-                            <input type="number" class="form-control" name="telepon" required>
-                        </div>
-                        <div>
-                            <label>Email</label>
-                            <input type="email" class="">
-                        </div>
-                        <div class="form-group">
-                            <label>Tambahkan Foto</label>
-                            <input type="file" class="form-control" name="foto" required>
-                        </div><r>
-                            <button type="submit" class="btn btn-primary">Simpan</button>
-                    </form>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">Show Data</div>
+
+                    <div class="card-body">
+                        <form action="{{ route('ukm.update', $ukm->id) }}" method="post" enctype="multipart/form-data">
+                            @csrf
+                            @method('PUT')
+
+                            <div class="form-group">
+                                <label>Nama Ukm</label>
+                                <input type="text" class="form-control" name="nama_ukm" value="{{ $ukm->nama_ukm }}" disabled>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Deskripsi</label><br>
+                                <input type="text" class="form-control" name="deskripsi" value="{{ $ukm->deskripsi }}" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label>Foto</label>
+                                <img src="{{asset('storage/ukm/' . $ukm->foto)}}" alt ="" style="width:300px; height: 300px;">
+                            </div><r>
+                        </form>
+                        <a href="{{ route('ukm.index') }}" class="btn btn-primary">Kembali</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    </div>
   </div>
   <!--   Core   -->
   <script src="{{ asset ('admin/js/plugins/jquery/dist/jquery.min.js')}}"></script>

@@ -216,7 +216,7 @@
                 <div class="card">
                     <div class="card-header">Edit Data</div>
                     <div class="card-body">
-                        <form action="{{route('fasilitas.update', $nama_fasilitas->id)}}" method="post" enctype="multipart/form-data">
+                        <form action="{{route('fasilitas.update', $fasilitas->id)}}" method="post" enctype="multipart/form-data">
                             @csrf
                             @method('PUT')
                             <div class="form-group">

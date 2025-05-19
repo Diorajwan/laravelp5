@@ -85,7 +85,7 @@ class ArtikelController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $artikel = Artikel::findOrFair($id);
+        $artikel = Artikel::findOrFail($id);
         $artikel->judul = $request->judul;
         $artikel->isi = $request->isi;
 
@@ -112,6 +112,6 @@ class ArtikelController extends Controller
     {
         $artikel = Artikel::findOrFail($id);
         $artikel->delete();
-        return redirect()->route('artikel.index')->width('success', 'data berhasil dihapus');
+        return redirect()->route('artikel.index')->with('success', 'data berhasil dihapus');
     }
 }

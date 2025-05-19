@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Fasilitas;
 use Illuminate\Http\Request;
-
+use Storage;
 class FasilitasController extends Controller
 {
     /**
@@ -109,6 +109,6 @@ class FasilitasController extends Controller
     {
         $fasilitas = Fasilitas::findOrFail($id);
         $fasilitas->delete();
-        return redirect()->route('fasilitas.index')->width('success', 'data berhasil dihapus');
+        return redirect()->route('fasilitas.index')->with('success', 'data berhasil dihapus');
     }
 }

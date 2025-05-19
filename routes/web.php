@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArtikelController;
 use App\Http\Controllers\FasilitasController;
 use App\Http\Controllers\DosenController;
+use App\Http\Controllers\UkmController;
+use App\Http\Controllers\FakultasController;
+use App\Http\Controllers\PrestasiController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,6 +27,12 @@ Route::resource('artikel', ArtikelController::class);
 Route::resource('fasilitas', FasilitasController::class);
 
 Route::resource('dosen', DosenController::class);
+
+Route::resource('ukm', UkmController::class);
+
+Route::resource('fakultas', FakultasController::class);
+
+Route::resource('prestasi', PrestasiController::class);
 
 Auth::routes();
 

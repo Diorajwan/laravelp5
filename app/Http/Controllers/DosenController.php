@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Dosen;
-
+use Storage;
 class DosenController extends Controller
 {
     /**
@@ -111,6 +111,6 @@ class DosenController extends Controller
     {
         $dosen = Dosen::findOrFail($id);
         $dosen->delete();
-        return redirect()->route('dosen.index')->width('success', 'data berhasil dihapus');
+        return redirect()->route('dosen.index')->with('success', 'data berhasil dihapus');
     }
 }
