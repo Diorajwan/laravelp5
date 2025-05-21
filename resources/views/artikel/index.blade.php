@@ -61,8 +61,8 @@
                   @foreach ($artikel as $data)
                     <tr>
                       <td>{{ $no++ }}</td>
-                      <td>{{ $data->judul }}</td>
-                      <td>{{ $data->isi }}</td>
+                      <td>{{ Str::limit($data->judul, 10)}}</td>
+                      <td>{{ Str::limit($data->isi, 20) }}</td>
                       <td>
                         <img src="{{ asset('storage/artikel/' . $data->foto) }}" alt="Artikel Foto" style="width: 50px; height: 50px;">
                       </td>

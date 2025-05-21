@@ -186,11 +186,11 @@
                 @method('PUT')
                 <div class="form-group">
                   <label>Judul</label>
-                  <input type="text" class="form-control" name="judul" required>
+                  <input type="text" class="form-control" name="judul" value="{{ $artikel->judul }}" required>
                 </div>
                 <div class="form-group">
                   <label>Isi</label>
-                  <input type="text" class="form-control" name="isi">
+                  <input type="text" class="form-control" name="isi"  value="{{ $artikel->isi }}" required>
                 </div>
                 <div class="form-group">
                   <label>Tambahkan Foto</label><br>

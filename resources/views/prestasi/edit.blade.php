@@ -221,18 +221,18 @@
                             @method('PUT')
                             <div class="form-group">
                                 <label>Nama prestasi</label>
-                                <input type="text" class="form-control" name="nama_prestasi"  required>
+                                <input type="text" class="form-control" name="nama_prestasi" value="{{ $prestasi->nama_prestasi }}" required>
                             </div>
                             <div>
                                 <label>Jenis</label>
-                                <select name="jenis" id="">
+                                <select name="jenis" id=""  value="{{ $prestasi->jenis}}">
                                     <option value="mahasiswa">Mahasiswa</option>
                                     <option value="sekolah">Sekolah</option>
                                 </select>
                             </div>
                             <div>
                                 <label>Deskripsi</label>
-                                <input type="text" class="form-control" name="deskripsi" required>
+                                <input type="text" class="form-control" name="deskripsi" value="{{ $prestasi->deskripsi}}" required>
                             </div>
                             <div>
                                 <label>Tambahkan Foto</label>

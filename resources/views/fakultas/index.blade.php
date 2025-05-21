@@ -74,7 +74,7 @@
                       <td>{{ $no++ }}</td>
                       <td>{{ $data->nama_fakultas }}</td>
                       <td><img src="{{ asset('storage/fakultas/' . $data->foto) }}" alt="Foto Fakultas" style="width: 50px; height: 50px;"></td>
-                      <td>{{ $data->deskripsi }}</td>
+                      <td>{{ Str::limit($data->deskripsi, 20) }}</td>
                       <td>
                         <a href="{{ route('fakultas.show', $data->id) }}" class="btn btn-warning btn-sm"><i class="fas fa-eye"></i></a>
                         <a href="{{ route('fakultas.edit', $data->id) }}" class="btn btn-info btn-sm"><i class="fas fa-edit"></i></a>

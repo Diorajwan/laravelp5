@@ -20,7 +20,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>
-    Argon Dashboard - Free Dashboard for Bootstrap 4 by Creative Tim
+    Admin
   </title>
   <!-- Favicon -->
   <link href="{{ asset ('admin/img/brand/favico.png" rel="icon" type="image/png')}}">

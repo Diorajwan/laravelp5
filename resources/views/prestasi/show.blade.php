@@ -230,6 +230,10 @@
                                 <label>Jenis</label>
                                 <input type="text" class="form-control" name="jenis" value="{{ $prestasi->jenis}}">
                             </div>
+                            <div>
+                                <label>Deskripsi</label>
+                                <input type="text" class="form-control" name="deskripsi" value="{{ $prestasi->deskripsi}}" required>
+                            </div>
                             <div class="form-group">
                                 <label>Foto</label>
                                 <img src="{{asset('storage/prestasi/' . $prestasi->foto)}}" alt ="" style="width:300px; height: 300px;">

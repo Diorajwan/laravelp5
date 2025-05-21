@@ -221,12 +221,12 @@
                             @method('PUT')
                             <div class="form-group">
                                 <label>Nama Fasilitas</label>
-                                <input type="text" class="form-control" name="nama_fasilitas"  required>
+                                <input type="text" class="form-control" name="nama_fasilitas" value="{{$fasilitas->nama_fasilitas}}" required>
                             </div>
                             <div>
                                 <label>Tambahkan Foto</label>
                                 <img src="{{asset('storage/fasilitas/' .$fasilitas->foto)}}" alt="" style="width: 100px; hight: 100px;" >
-                                <input type="file" class="form-control" name="foto" required>
+                                <input type="file" class="form-control" name="foto" value="{{ $fasilitas->foto}}" required>
                             </div><r>
                                 <button type="submit" class="btn btn-primary">simpan</button>
                         </form>

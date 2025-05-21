@@ -17,7 +17,7 @@ return new class extends Migration
             $table->BigIncrements('id');
             $table->string('nama_fakultas');
             $table->string('foto');
-            $table->string('deskripsi');
+            $table->text('deskripsi');
             $table->timestamps();
         });
     }

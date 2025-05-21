@@ -60,7 +60,7 @@
                     <tr>
                       <td>{{ $no++ }}</td>
                       <td>{{ $data->nama_ukm }}</td>
-                      <td>{{ $data->deskripsi }}</td>
+                      <td>{{ Str::limit($data->deskripsi, 20) }}</td>
                       <td>
                         <img src="{{ asset('storage/ukm/' . $data->foto) }}" alt="ukm Foto" style="width: 50px; height: 50px;">
                       </td>

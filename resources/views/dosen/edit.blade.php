@@ -221,28 +221,28 @@
                             @method('PUT')
                             <div class="form-group">
                                 <label>Nama Guru</label>
-                                <input type="text" class="form-control" name="nama_guru"  required>
+                                <input type="text" class="form-control" name="nama_guru" value="{{$dosen->nama_guru}}" required>
                             </div>
                             <div class="form_group">
                                 <label>Telepon</label>
-                                <input type="number" class="form-control" name="telepon" required>
+                                <input type="number" class="form-control" name="telepon" value="{{$dosen->telepon}}" required>
                             </div>
                             <div>
                                 <label>Email</label>
-                                <input type="text" class="form-control" name="email" required>
+                                <input type="text" class="form-control" name="email" value="{{$dosen->email}}" required>
                             </div>
                             <div>
                                 <label>Jabatan</label>
-                                <input type="text" class="form-control" name="jabatan" required>
+                                <input type="text" class="form-control" name="jabatan" value="{{$dosen->jabatan}}" required>
                             </div>
                             <div>
                                 <label>Tambahkan Foto</label>
                                 <img src="{{asset('storage/dosen/' .$dosen->foto)}}" alt="" style="width: 100px; hight: 100px;" >
-                                <input type="file" class="form-control" name="foto" required>
+                                <input type="file" class="form-control" name="foto" value="{{$dosen->foto}}" required>
                             </div>
                             <div>
                                 <label>Status</label>
-                                <input type="text" class="form-control" name="status" required>
+                                <input type="text" class="form-control" name="status" value="{{$dosen->status}}" required>
                             </div><r>
                                 <button type="submit" class="btn btn-primary">simpan</button>
                         </form>

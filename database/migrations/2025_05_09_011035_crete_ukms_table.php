@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('ukms', function (Blueprint $table) {
             $table->BigIncrements('id');
             $table->string('nama_ukm');
-            $table->string('deskripsi');
+            $table->text('deskripsi');
             $table->string('foto');
             $table->timestamps();
         });

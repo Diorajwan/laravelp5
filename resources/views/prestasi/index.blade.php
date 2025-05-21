@@ -64,7 +64,7 @@
                       <td>{{ $no++ }}</td>
                       <td>{{ $data->nama_prestasi }}</td>
                       <td>{{ $data->jenis }}</td>
-                      <td>{{ $data->deskripsi}}</td>
+                      <td>{{ Str::limit($data->deskripsi, 20)}}</td>
                       <td>
                         <img src="{{ asset('storage/prestasi/' . $data->foto) }}" alt="prestasi Foto" style="width: 50px; height: 50px;">
                       </td>

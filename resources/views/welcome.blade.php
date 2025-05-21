@@ -27,35 +27,36 @@
 	<body>
 
 		<!-- Start Header/Navigation -->
-		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+         <nav class="custom-navbar navbar navbar-expand-md navbar-light bg-white" aria-label="Furni navigation bar">
 
-			<div class="container">
-				<a class="navbar-brand" href="index.html">UNIVERSITAS TELKOM<span>.</span></a>
+	<div class="container">
+		<a class="navbar-brand" href="index.html">UNIVERSITAS TELKOM<span>.</span></a>
 
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-				<div class="collapse navbar-collapse" id="navbarsFurni">
-					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-						<li class="nav-item active">
-							<a class="nav-link" href="index.html">Home</a>
-						</li>
-						<li><a class="nav-link" href="shop.html">Shop</a></li>
-						<li><a class="nav-link" href="about.html">About us</a></li>
-						<li><a class="nav-link" href="services.html">Services</a></li>
-						<li><a class="nav-link" href="blog.html">Blog</a></li>
-						<li><a class="nav-link" href="contact.html">Contact us</a></li>
-					</ul>
+		    <div class="collapse navbar-collapse" id="navbarsFurni">
+			<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li><a class="nav-link" href="shop.html">Shop</a></li>
+				<li><a class="nav-link" href="about.html">About us</a></li>
+				<li><a class="nav-link" href="services.html">Services</a></li>
+				<li><a class="nav-link" href="blog.html">Blog</a></li>
+				<li><a class="nav-link" href="contact.html">Contact us</a></li>
+			</ul>
 
-					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
-						<li><a class="nav-link" href="#"><img src="{{ asset('user/images/user.svg')}}"></a></li>
-						<li><a class="nav-link" href="cart.html"><img src="{{ asset('user/images/cart.svg')}}"></a></li>
-					</ul>
-				</div>
-			</div>
+			<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+				<li><a class="nav-link" href="#"><img src="{{ asset('user/images/user.svg')}}"></a></li>
+				<li><a class="nav-link" href="cart.html"><img src="{{ asset('user/images/cart.svg')}}"></a></li>
+			</ul>
+		</div>
+	</div>
 
-		</nav>
+</nav>
+
 		<!-- End Header/Navigation -->
 
 		<!-- Start Hero Section -->
@@ -64,15 +65,11 @@
 					<div class="row justify-content-between">
 						<div class="col-lg-5">
 							<div class="intro-excerpt">
-								<h1>Modern Interior <span clsas="d-block">Design Studio</span></h1>
-								<p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
-								<p><a href="" class="btn btn-secondary me-2">Shop Now</a><a href="#" class="btn btn-white-outline">Explore</a></p>
+								<h1>TELKOM <span clsas="d-block">UNIVERSITY</span></h1>
+								<p class="mb-4">Best Private University</p>
 							</div>
 						</div>
 						<div class="col-lg-7">
-							<div class="hero-img-wrap">
-								<img src="{{ asset('user/images/telkom.png')}}" class="img-fluid">
-							</div>
 						</div>
 					</div>
 				</div>
@@ -80,63 +77,6 @@
 		<!-- End Hero Section -->
 
 		<!-- Start Product Section -->
-		<div class="product-section">
-			<div class="container">
-				<div class="row">
-
-					<!-- Start Column 1 -->
-					<div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
-						<h2 class="mb-4 section-title">Crafted with excellent material.</h2>
-						<p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. </p>
-						<p><a href="shop.html" class="btn">Explore</a></p>
-					</div>
-					<!-- End Column 1 -->
-
-					<!-- Start Column 2 -->
-					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-						<a class="product-item" href="cart.html">
-							<img src="{{ asset('user/images/product-1.png')}}" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Nordic Chair</h3>
-							<strong class="product-price">$50.00</strong>
-
-							<span class="icon-cross">
-								<img src="{{ asset('user/images/cross.svg')}}" class="img-fluid">
-							</span>
-						</a>
-					</div>
-					<!-- End Column 2 -->
-
-					<!-- Start Column 3 -->
-					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-						<a class="product-item" href="cart.html">
-							<img src="{{ asset('user/images/product-2.png')}}" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Kruzo Aero Chair</h3>
-							<strong class="product-price">$78.00</strong>
-
-							<span class="icon-cross">
-								<img src="{{ asset('user/images/cross.svg')}}" class="img-fluid">
-							</span>
-						</a>
-					</div>
-					<!-- End Column 3 -->
-
-					<!-- Start Column 4 -->
-					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-						<a class="product-item" href="cart.html">
-							<img src="{{ asset ('user/images/product-3.png')}}" class="img-fluid product-thumbnail">
-							<h3 class="product-title">Ergonomic Chair</h3>
-							<strong class="product-price">$43.00</strong>
-
-							<span class="icon-cross">
-								<img src="{{ asset ('user/images/cross.svg')}}" class="img-fluid">
-							</span>
-						</a>
-					</div>
-					<!-- End Column 4 -->
-
-				</div>
-			</div>
-		</div>
 		<!-- End Product Section -->
 
 		<!-- Start Why Choose Us Section -->
@@ -144,56 +84,16 @@
 			<div class="container">
 				<div class="row justify-content-between">
 					<div class="col-lg-6">
-						<h2 class="section-title">Why Choose Us</h2>
-						<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
+						<h2 class="section-title">Tentang UNIVERSITAS TELKOM</h2>
+						<p>Telkom University terus melakukan transformasi untuk memperkuat posisinya sebagai lembaga pendidikan unggulan melalui Telkom University National Campus (TUNC). Program ini bertujuan untuk menyatukan berbagai perguruan tinggi swasta di bawah naungan YPT menjadi satu entitas pendidikan yang lebih kuat dan terpadu.
+                            Pelaksanaan Kick-off Telkom University National Campus (TUNC) dilaksanakan pada 25 Januari 2022. Dimulai dengan Kick-off penyatuan IT Telkom Jakarta pada 10 Juni 2022, dan resmi menjadi Telkom University Jakarta (TUJ) pada 25 Januari 2023. Langkah ini dilanjutkan dengan Kick-off IT Telkom Surabaya yang dilaksanakan pada 29 Maret 2023, dan resmi menjadi Telkom University Surabaya (TUS) pada 7 Desember 2023. Selanjutnya, penyatuan IT Telkom Purwokerto dengan pelaksanaan Kick-off pada 13 September 2023, dan resmi menjadi Telkom University Purwokerto (TUP) pada 3 September 2024. Transformasi ini tidak hanya menegaskan komitmen Tel-U untuk menjadi universitas kelas dunia, tetapi juga memastikan bahwa pendidikan berkualitas tinggi dapat diakses oleh lebih banyak masyarakat di seluruh Indonesia
+                        </p>
 
-						<div class="row my-5">
-							<div class="col-6 col-md-6">
-								<div class="feature">
-									<div class="icon">
-										<img src="{{ asset ('user/images/truck.svg')}}" alt="Image" class="imf-fluid">
-									</div>
-									<h3>Fast &amp; Free Shipping</h3>
-									<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
-								</div>
-							</div>
-
-							<div class="col-6 col-md-6">
-								<div class="feature">
-									<div class="icon">
-										<img src="{{ asset ('user/images/bag.svg')}}" alt="Image" class="imf-fluid">
-									</div>
-									<h3>Easy to Shop</h3>
-									<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
-								</div>
-							</div>
-
-							<div class="col-6 col-md-6">
-								<div class="feature">
-									<div class="icon">
-										<img src="{{ asset ('user/images/support.svg')}}" alt="Image" class="imf-fluid">
-									</div>
-									<h3>24/7 Support</h3>
-									<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
-								</div>
-							</div>
-
-							<div class="col-6 col-md-6">
-								<div class="feature">
-									<div class="icon">
-										<img src="{{ asset ('user/images/return.svg')}}" alt="Image" class="imf-fluid">
-									</div>
-									<h3>Hassle Free Returns</h3>
-									<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
-								</div>
-							</div>
-
-						</div>
 					</div>
 
 					<div class="col-lg-5">
 						<div class="img-wrap">
-							<img src="{{ asset ('user/images/why-choose-us-img.jpg')}}" alt="Image" class="img-fluid">
+							<img src="{{ asset ('user/images/telkom-university-smapse-1.png')}}" alt="Image" class="img-fluid">
 						</div>
 					</div>
 
@@ -203,27 +103,31 @@
 		<!-- End Why Choose Us Section -->
 
 		<!-- Start We Help Section -->
-		<div class="we-help-section">
+         <div class="we-help-section">
 			<div class="container">
 				<div class="row justify-content-between">
 					<div class="col-lg-7 mb-5 mb-lg-0">
 						<div class="imgs-grid">
-							<div class="grid grid-1"><img src="{{ asset('user/images/img-grid-1.jpg')}}" alt="Untree.co"></div>
-							<div class="grid grid-2"><img src="{{ asset('user/images/img-grid-2.jpg')}}" alt="Untree.co"></div>
-							<div class="grid grid-3"><img src="{{ asset('user/images/img-grid-3.jpg')}}" alt="Untree.co"></div>
+							<div class="grid grid-1"><img src="{{ asset('user/images/telkom-removebg-preview.png')}}" alt="Untree.co" style="width:1500px"></div>
 						</div>
 					</div>
 					<div class="col-lg-5 ps-lg-5">
-						<h2 class="section-title mb-4">We Help You Make Modern Interior Design</h2>
-						<p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
-
-						<ul class="list-unstyled custom-list my-4">
-							<li>Donec vitae odio quis nisl dapibus malesuada</li>
-							<li>Donec vitae odio quis nisl dapibus malesuada</li>
-							<li>Donec vitae odio quis nisl dapibus malesuada</li>
-							<li>Donec vitae odio quis nisl dapibus malesuada</li>
-						</ul>
-						<p><a herf="#" class="btn">Explore</a></p>
+						<h3 class="section-title mb-4">Visi Misi & Tujuan Universitas Telkom</h3>
+                        <p><b>Visi : </b>
+                        Menjadi National Excellence Entrepreneurial University berbasis AI pada tahun 2028, yang berkontribusi pada pemenuhan tujuan pembangunan berkelanjutan (sustainable development goals)
+                    </p>
+                     <p class="list-unstyled custom-list my-3">
+                        <b>Misi : </b>
+                       <li> Menyelenggarakan dan mengembangkan pendidikan berbasis AI berkelas dunia, dan berwawasan kewirausahaan</li>
+                       <li> Mengakselerasi transformasi digital berbasis AI dalam mengembangkan dan menyebarluaskan pengetahuan baru dan produk intelektual di bidang teknologi, sains, dan seni yang berkontribusi pada pemenuhan tujuan pembangunan berkelanjutan (sustainable development goals)</li>
+                       <li> Berkolaborasi dengan industri dan pemangku kepentingan lain dalam pengembangan inovasi berbasis AI yang berkontribusi pada pertumbuhan ekonomi bangsa</li>
+                    </p>
+						<p class="list-unstyled custom-list my-3">
+                            <p><b>Tujuan :</b></p>
+                            <li>Menghasilkan penelitian transdisiplin yang berkontribusi sesuai kebutuhan bangsa dan dunia melalui penciptaan pengetahuan baru dan produk intelektual untuk memenuhi tujuan pembangunan berkelanjutan</li>
+							<li>Menghasilkan lulusan berdaya saing global (global competitive graduates) dan berwawasan entrepreneurship</li>
+							<li>Menghasilkan produk intelektual dan inovasi yang berkontribusi pada kemajuan bangsa dan pembangunan berkelanjutan</li>
+                        </p>
 					</div>
 				</div>
 			</div>
@@ -233,16 +137,16 @@
 		<!-- Start Popular Product -->
 		<div class="popular-product">
 			<div class="container">
+                <h2 class="section-title col-lg-7 mx-auto text-center">Kehidupan Kampus</h2>
 				<div class="row">
-
 					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
 						<div class="product-item-sm d-flex">
-							<div class="thumbnail">
-								<img src="{{ asset ('user/images/product-1.png')}}" alt="Image" class="img-fluid">
+							<div class="">
+								<img src="{{ asset ('user/images/unitmahasiswa.jpg')}}" alt="Image" class="rounded-2 thumbnail" style="width:160px">
 							</div>
 							<div class="pt-3">
-								<h3>Nordic Chair</h3>
-								<p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
+								<h3>Unit Kegiatan Mahasiswa</h3>
+								<p>Beberapa Unit Kegiatan Mahasiswa </p>
 								<p><a href="#">Read More</a></p>
 							</div>
 						</div>
@@ -250,12 +154,12 @@
 
 					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
 						<div class="product-item-sm d-flex">
-							<div class="thumbnail">
-								<img src="{{ asset ('user/images/product-2.png')}}" alt="Image" class="img-fluid">
+							<div class="">
+								<img src="{{ asset ('user/images/fasilitas2.jpg')}}" alt="Image" class="rounded-2 thumbnail" style="width:200px;">
 							</div>
-							<div class="pt-3">
-								<h3>Kruzo Aero Chair</h3>
-								<p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
+							<div class="pt-3 me-2">
+								<h3>Fasilitas Unggulan</h3>
+								<p>Beberapa Fasilitas Unggulan </p>
 								<p><a href="#">Read More</a></p>
 							</div>
 						</div>
@@ -263,12 +167,12 @@
 
 					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
 						<div class="product-item-sm d-flex">
-							<div class="thumbnail">
-								<img src="{{ asset ('user/images/product-3.png')}}" alt="Image" class="img-fluid">
+							<div class="">
+								<img src="{{ asset ('user/images/topi-removebg-preview.png')}}" alt="Image" class="thumbnail" style="width:200px">
 							</div>
 							<div class="pt-3">
-								<h3>Ergonomic Chair</h3>
-								<p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
+								<h3>Prestasi</h3>
+								<p>Beberapa Prestasi Universitas dan Mahasiswa </p>
 								<p><a href="#">Read More</a></p>
 							</div>
 						</div>
@@ -284,7 +188,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-7 mx-auto text-center">
-						<h2 class="section-title">Testimonials</h2>
+						<h2 class="section-title">Akademik</h2>
 					</div>
 				</div>
 
@@ -305,15 +209,15 @@
 
 											<div class="testimonial-block text-center">
 												<blockquote class="mb-5">
-													<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
+													<p>&ldquo;Tel-U menjadi Perguruan Tinggi Swasta Terbaik di Indonesia yang telah terakreditasi Unggul dari BAN-PT&rdquo;</p>
 												</blockquote>
 
 												<div class="author-info">
 													<div class="author-pic">
-														<img src="{{ asset ('user/images/person-1.png')}}" alt="Maria Jones" class="img-fluid">
+														<img src="{{ asset ('user/images/mengapa.webp')}}" alt="Maria Jones" class="img-fluid">
 													</div>
-													<h3 class="font-weight-bold">Maria Jones</h3>
-													<span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
+													<h3 class="font-weight-bold">Mengapa Tel - U</h3>
+													<span class="position d-block mb-3"></span>
 												</div>
 											</div>
 
@@ -328,15 +232,15 @@
 
 											<div class="testimonial-block text-center">
 												<blockquote class="mb-5">
-													<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
+													<p>&ldquo;Terdapat 7 Fakultas dan 82 Program Studi terdiri atas Program Doktoral, Magister, Sarjana, Sarjana Terapan, dan Diploma&rdquo;</p>
 												</blockquote>
 
 												<div class="author-info">
 													<div class="author-pic">
-														<img src="{{ asset ('user/images/person-1.png')}}" alt="Maria Jones" class="img-fluid">
+														<img src="{{ asset ('user/images/tentangfakultas.webp')}}" alt="Maria Jones" class="img-fluid">
 													</div>
-													<h3 class="font-weight-bold">Maria Jones</h3>
-													<span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
+													<h3 class="font-weight-bold">Tentang Fakultas</h3>
+													<span class="position d-block mb-3"></span>
 												</div>
 											</div>
 
@@ -351,15 +255,15 @@
 
 											<div class="testimonial-block text-center">
 												<blockquote class="mb-5">
-													<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
+													<p>&ldquo;Tel-U memiliki layanan sistem akademik berbasis digital yang telah terintegrasi untuk mendukung&rdquo;</p>
 												</blockquote>
 
 												<div class="author-info">
 													<div class="author-pic">
-														<img src="{{ asset ('user/images/person-1.png')}}" alt="Maria Jones" class="img-fluid">
+														<img src="{{ asset ('user/images/Groupberkuliah.webp')}}" alt="Maria Jones" class="img-fluid">
 													</div>
-													<h3 class="font-weight-bold">Maria Jones</h3>
-													<span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
+													<h3 class="font-weight-bold">Berkuliah di Tel -U</h3>
+													<span class="position d-block mb-3"></span>
 												</div>
 											</div>
 

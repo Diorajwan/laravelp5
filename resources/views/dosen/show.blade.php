@@ -237,7 +237,7 @@
                             </div>
                             <div>
                                 <label>Jabatan</label>
-                                <select name="jabatan" id="">
+                                <select name="jabatan" id="" value="{{$dosen->jabatan}}">
                                     <option value="REKTOR">REKTOR</option>
                                     <option value="WAKIL REKTOR">WAKIL REKTOR</option>
                                     <option value="DEKAN">DEKAN</option>
