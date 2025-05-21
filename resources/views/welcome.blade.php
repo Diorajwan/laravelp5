@@ -1,10 +1,3 @@
-<!-- /*
-* Bootstrap 5
-* Template Name: Furni
-* Template Author: Untree.co
-* Template URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
-*/ -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -21,13 +14,13 @@
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 		<link href="{{ asset ('user/css/tiny-slider.css')}}" rel="stylesheet">
 		<link href="{{ asset ('user/css/style.css')}}" rel="stylesheet">
-		<title>Furni Free Bootstrap 5 Template for Furniture and Interior Design Websites by Untree.co </title>
+		<title>user </title>
 	</head>
 
 	<body>
 
 		<!-- Start Header/Navigation -->
-         <nav class="custom-navbar navbar navbar-expand-md navbar-light bg-white" aria-label="Furni navigation bar">
+   <nav class="custom-navbar navbar navbar-expand-md navbar-light bg-white" aria-label="Furni navigation bar">
 
 	<div class="container">
 		<a class="navbar-brand" href="index.html">UNIVERSITAS TELKOM<span>.</span></a>
@@ -286,7 +279,7 @@
 			<div class="container">
 				<div class="row mb-5">
 					<div class="col-md-6">
-						<h2 class="section-title">Recent Blog</h2>
+						<h2 class="section-title">Berita Terkini</h2>
 					</div>
 					<div class="col-md-6 text-start text-md-end">
 						<a href="#" class="more">View All Posts</a>
@@ -297,11 +290,11 @@
 
 					<div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
 						<div class="post-entry">
-							<a href="#" class="post-thumbnail"><img src="{{ asset ('user/images/post-1.jpg')}}" alt="Image" class="img-fluid"></a>
+							<a href="#" class="post-thumbnail"><img src="{{ asset ('user/images/isiartikel.webp')}}" alt="Image" class="img-fluid"></a>
 							<div class="post-content-entry">
-								<h3><a href="#">First Time Home Owner Ideas</a></h3>
+								<h3><a href="#">Rektor Telkom University Luluskan 1498 Wisudawan Dengan Nilai Empati Dan Profesionalitas Yang Siap Berkontribusi Bagi Dunia</a></h3>
 								<div class="meta">
-									<span>by <a href="#">Kristin Watson</a></span> <span>on <a href="#">Dec 19, 2021</a></span>
+									 <span>Mei 10 2025</span>
 								</div>
 							</div>
 						</div>
@@ -309,11 +302,11 @@
 
 					<div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
 						<div class="post-entry">
-							<a href="#" class="post-thumbnail"><img src="{{ asset ('user/images/post-2.jpg')}}" alt="Image" class="img-fluid"></a>
+							<a href="#" class="post-thumbnail"><img src="{{ asset ('user/images/Memahami.webp')}}" alt="Image" class="img-fluid"></a>
 							<div class="post-content-entry">
-								<h3><a href="#">How To Keep Your Furniture Clean</a></h3>
+								<h3><a href="#">Memahami Unsur Berita dari Dasar: Pengertian, Struktur, dan Contohnya</a></h3>
 								<div class="meta">
-									<span>by <a href="#">Robert Fox</a></span> <span>on <a href="#">Dec 15, 2021</a></span>
+									 <span>Mei 10 2025</span>
 								</div>
 							</div>
 						</div>
@@ -321,11 +314,11 @@
 
 					<div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
 						<div class="post-entry">
-							<a href="#" class="post-thumbnail"><img src="{{ asset ('user/images/post-3.jpg')}}" alt="Image" class="img-fluid"></a>
+							<a href="#" class="post-thumbnail"><img src="{{ asset ('user/images/berita3.webp')}}" alt="Image" class="img-fluid"></a>
 							<div class="post-content-entry">
-								<h3><a href="#">Small Space Furniture Apartment Ideas</a></h3>
+								<h3><a href="#">Telkom Indonesia dan Telkom University Berkolaborasi Selenggarakan Pelatihan Pemasaran Produk Olahan Laut untuk Istri Nelayan</a></h3>
 								<div class="meta">
-									<span>by <a href="#">Kristin Watson</a></span> <span>on <a href="#">Dec 12, 2021</a></span>
+									 <span>Mei 5 2025</span>
 								</div>
 							</div>
 						</div>
@@ -341,7 +334,7 @@
 			<div class="container relative">
 
 				<div class="sofa-img">
-					<img src="{{ asset('user/images/sofa.png')}}" alt="Image" class="img-fluid">
+					<img src="{{ asset('user/images/telkom-removebg-preview.png')}}" alt="Image" class="img-fluid" style="width:1000px">
 			</div>
 
 				<div class="row">
